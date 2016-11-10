@@ -13,27 +13,14 @@ header {
 	text-align: center;
 	}
 
-#useful-resources {
+#fernsehturm {
 	text-align: auto;
+	border-radius: 50%;
 	position: absolute;
-	right: 20px;
-	border: 1px solid #00BFFF;
-	border-radius: 10%;
-	width: 17%;
-	font-size: 15px;
-	margin: 60px 20px 0px 0px;
-	background-color: #fdfdfd;
+	right: 40px;
+	margin: 40px 20px 0px 20px;
 	display: inline-block;
-}
-#useful-resources li {
-	margin-top: -13px;
-	padding: 0px;
-	line-height: 2.5em;
-	list-style: none;
-}
-#aside-title {
-	font-size: 17px;
-	text-align: center;
+
 }
 
 nav ul {
