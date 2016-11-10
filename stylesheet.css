@@ -14,7 +14,6 @@ header {
 	}
 
 #fernsehturm {
-	text-align: auto;
 	border-radius: 50%;
 	position: absolute;
 	right: 40px;
@@ -72,6 +71,11 @@ figcaption {
 	text-align: center;
 	font-style: italic;
 	font-size: 20px;
+}
+#termin {
+	display: inline-block;
+	position: absolute;
+	right: 30px;
 }
 
 body {
