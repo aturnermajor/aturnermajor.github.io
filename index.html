@@ -3,7 +3,9 @@
 
 <head>
 	<title> Year Abroad in Berlin?</title>
-
+	<link rel="stylesheet" type="text/css" href="bootstrap_exercise-master/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="script.jss"></script>
 	<link rel="stylesheet" href= "stylesheet.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Crete+Round|Gloria+Hallelujah" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +14,7 @@
 <body>
 	<header>
 		<div class="header-img">
-			<img src="flag.png" alt="flag" style="max-width: 50px">
+			<img src="flag.png" alt="flag" style="width: 60px">
 		</div>
 		<div>Berlin Year Abroad</div>
 	</header>
@@ -22,14 +24,12 @@
 			<li><a href="#about-me">About Me</a></li>
 			<li><a href="#where-in-berlin">Where in Berlin?</a></li>
 			<li><a href="#anmeldung">Anmeldung</a></li>
-			<li><a href="Accommodation.x">Accommodation</a></li>
-			<li><a href="Phone.x">Phone</a></li>
-			<li><a href="Weekends.x">Weekend Trips</a></li>
+			<li><a href="#accommodation">Accommodation</a></li>
 		</ul>
 	</nav>
 
 	<div>
-		<img src="fernsehturm.jpg" width="220px" id="fernsehturm">
+		<img src="tv-tower.jpg" width="220px" id="tv-tower">
 	</div>
 
 	<div class="main" id="about-me">
@@ -45,38 +45,101 @@
 		<p><span><strong>Where in Berlin?</strong></span><br>
 		One of the first things to do is to decide where in Berlin you want to live. This will partly be based on where you're working or studying, but here is a quick overview of the characters of the different areas of the city.</p></div>
 
-	<div class="pictures">
-		<figure id="mitte" class="pictures">
-			<img src="mitte.jpg" height="200px">
-			<figcaption>MITTE</figcaption>
-		</figure> 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<figure id="mitte" class="pictures">
+				<img src="mitte.jpg" height="200px">
+				<figcaption>MITTE<br>$$$$$</figcaption>
+					<ul class="caption-ul">
+						<li>Right in the centre of the city</li>
+						<li>Has the museums and government <br>buildings</li>
+						<li>Has some posh shops and galleries</li>
+					</ul>
+			</figure>
+			<figure id="xberg" class="pictures">
+				<img src="xberg.jpg" height="200px">
+				<figcaption>KREUZBERG<br>$$$</figcaption>
+					<ul class="caption-ul">
+						<li>Super alternative and arty</li>
+						<li>Has lots of interesting bars</li>
+						<li>Goes along the canal</li>
+					</ul>
+			</figure>
+		</div> 
 
-		<figure id="xberg" class="pictures">
-			<img src="xberg.jpg" height="200px">
-			<figcaption>KREUZBERG</figcaption>
-		</figure> 
-
-		<figure id="pberg" class="pictures">
-			<img src="pberg.jpg" height="200px">
-			<figcaption>PRENZLAUER BERG</figcaption>
-		</figure> 
+		<div class="col-sm-4">
+			<figure id="pberg" class="pictures">
+				<img src="pberg.jpg" height="200px">
+				<figcaption>PRENZLAUER BERG<br>$$$$</figcaption>
+					<ul class="caption-ul">
+						<li>Quiet, chic area</li>
+						<li>Full of independent cafes</li>
+						<li>Quite badly connected</li>
+					</ul>
+			</figure>		
+			<figure id="neukolln" class="pictures">
+				<img src="neukolln.jpg" height="200px">
+				<figcaption>NEUKÖLLN<br>$</figcaption>
+					<ul class="caption-ul">
+						<li>Very near to lots of clubs</li>
+						<li>Has lots of international restaurants</li>
+						<li>Literally everyone else wants to live here</li>
+					</ul>
+			</figure>
+		</div>
+		
+		<div class="col-sm-4">
+			<figure id="sberg" class="pictures">
+				<img src="sberg.jpeg" height="200px">
+				<figcaption>SCHÖNEBERG<br> $$</figcaption>
+					<ul class="caption-ul">
+						<li>Lots of German students live here</li>
+						<li>Well-connected</li>
+						<li>Quite far away from most bars/clubs</li>
+					</ul>
+			</figure>
+			<figure id="cburg" class="pictures">
+				<img src="cburg.jpg" height="200px">
+				<figcaption>CHARLOTTENBURG<br>$$$</figcaption>
+					<ul class="caption-ul">
+						<li>Lots of nice parks and woody bits</li>
+						<li>More 'German' than some of Berlin</li>
+						<li>Lots of schools etc.</li>
+					</ul>
+			</figure>
+		</div>
 	</div>
+</div>
 
 	<div class="main" id="anmeldung">
 		<p><span><strong>Anmeldung</strong></span><br>
 		One thing that Germans have to do that we don't is their Anmeldung. If you are moving to a German city for more than three months you are supposed to do this. It is a nuisance though, so do you have to? Here are some reasons why you should:
-		
-		<ol>
-			<li>You can only set up a bank account with an Anmeldung certificate</li>
-			<li>Many other processes in German life (e.g. joining a football team) require one</li>
-			<li>It is illegal not to </li>
-		</ol>
+		</p>
+			<ol>
+				<li>You can only set up a bank account with an Anmeldung certificate</li>
+				<li>Many other processes in German life (e.g. joining a football team) require one</li>
+				<li>It is illegal not to </li>
+			</ol>
+		<p>
 		So how do you actually do your Anmeldung? The hard bit is getting an appointment. Because so many people are trying to move to Berlin all the time, appointments are booked up literally months in advance. You can use this <a href="https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&anliegen[]=120686&dienstleisterlist=122210,122217,122219,122227,122231,122243,122252,122260,122262,122254,122271,122273,122277,122280,122282,122284,122291,122285,122286,122296,150230,122301,122297,122294,122312,122314,122304,122311,122309,317869,324433,325341,324434,122281,324414,122283,122279,122276,122274,122267,122246,122251,122257,122208,122226&herkunft=http%3A%2F%2Fservice.berlin.de%2Fdienstleistung%2F120686%2F">link</a> to search and book appointments. If you are planning to move to Berlin in a few months time, now is when you should be booking one.<br><br>
-		<strong>But I move out in a week and have no appointment!</strong> This isn't a huge problem. People with appointments often have to cancel them and then they become available again online. This just means you will have to spend a lot of time searching through the page.</p>
-		<figure id="termin">
-			<img src="termin.jpg" width="240px">
-			<figcaption>All booked!</figcaption>
-		</figure></div>
+		<strong>But I move out in a week and have no appointment!</strong> This isn't a huge problem. People with appointments often have to cancel them and then they become available again online. This just means you will have to spend a lot of time searching through the page.
+		</p>
+	</div>
+
+	<div class="main" id="accommodation">
+		<p><span><strong>Accommodation</strong></span><br>
+		The vast majority of people in Berlin just rent their apartments. This is a big advantage for visitors because there is quite a high turnover and people often let out their rooms when they spend a semester abroad. The big challenge in Berlin is that the rental market is incredibly competitive. Something could be advertised in at 9am and already let by 9.30.<br>
+		I suggested using a site called <a href="http://www.wg-gesucht.de/">WG-Gesucht</a> where you can browse apartments and send letters information about yourself. The important thing here to send out <strong>A LOT</strong> of emails. I sent out about 50, received 15 replies and viewed about 8 properties. I then got accepted by 3. I had a fairly easy time of it. I knew some people who searched for months before finding somewhere to stay. <br><br>
+		<strong>BEWARE</strong><br>
+		WG-Gesucht does experience a lot of scams. Some people offer you a place to stay but demand a deposit before letting you see the apartment. This does happen to people - one person I knew lost €1200 this way.
+		</p>
+	</div>
+
+	<div id="closer">
+		<p><br>
+		Most of all - enjoy the city! It's awesome and once you've got the admin out of the way make the most of it.
+		</p>
 	</div>
 </body>
 
